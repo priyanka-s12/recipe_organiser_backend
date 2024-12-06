@@ -5,7 +5,10 @@ const mongoUri = process.env.MONGODB;
 
 const initialiseDatabase = async () => {
   try {
-    const connection = await mongoose.connect(mongoUri);
+    const connection = await mongoose.connect(mongoUri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     if (connection) {
       console.log('Connected to database');
     }
