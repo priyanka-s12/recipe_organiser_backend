@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Spaghetti Carbonara",
+    "image": "https://oldcutkitchen.com/wp-content/uploads/2020/04/IMG_4807-1024x682.jpg",
+    "cuisineType": "Italian",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated Parmesan cheese",
+      "2 cloves garlic",
+      "Salt",
+      "Pepper"
+    ],
+    "instructions": [
+      "Cook the spaghetti in salted boiling water until al dente.",
+      "In a pan, fry the pancetta until crispy.",
+      "In a bowl, whisk the eggs and mix in the grated Parmesan cheese.",
+      "Drain the pasta, reserving some cooking water.",
+      "Mix the pasta with the pancetta, then remove from heat.",
+      "Stir in the egg mixture, adding reserved water as needed to create a creamy sauce.",
+      "Season with salt and pepper to taste."
+    ]
+  },
+  {
+    "name": "Butter Chicken",
+    "image": "https://img.taste.com.au/qPAElV3h/taste/2013/07/easy-butter-chicken-image1-197844-1.jpg",
+    "cuisineType": "Indian",
+    "ingredients": [
+      "500g chicken thighs",
+      "200ml cream",
+      "2 onions, finely chopped",
+      "3 tomatoes, pureed",
+      "2 tbsp butter",
+      "2 tsp garam masala",
+      "1 tsp turmeric",
+      "2 tsp chili powder",
+      "3 cloves garlic, minced",
+      "1 inch ginger, minced",
+      "Salt"
+    ],
+    "instructions": [
+      "Marinate the chicken with turmeric, chili powder, and salt for 30 minutes.",
+      "Heat butter in a pan and sauté the onions until golden brown.",
+      "Add garlic, ginger, garam masala, and cook for a minute.",
+      "Stir in tomato puree and simmer for 10 minutes.",
+      "Add the chicken and cook until done.",
+      "Pour in cream and simmer for 5 minutes.",
+      "Serve hot with rice or naan."
+    ]
+  },
+  {
+    "name": "Thai Noodles",
+    "image": "https://takestwoeggs.com/wp-content/uploads/2023/11/Soy-Sauce-Pan-Fried-Noodles-Takestwoeggs-sq.jpg",
+    "cuisineType": "Thai",
+    "ingredients": [
+      "200g egg noodles",
+      "100g chicken breast, sliced",
+      "1 carrot, julienned",
+      "1 bell pepper, sliced",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "2 cloves garlic, minced",
+      "2 tbsp vegetable oil",
+      "Salt",
+      "Pepper"
+    ],
+    "instructions": [
+      "Cook the noodles according to package instructions and set aside.",
+      "Heat oil in a wok and sauté the garlic until fragrant.",
+      "Add chicken and stir-fry until cooked through.",
+      "Add carrot and bell pepper, cooking until slightly tender.",
+      "Stir in soy sauce, oyster sauce, and noodles.",
+      "Toss until everything is evenly coated and heated through.",
+      "Season with salt and pepper to taste."
+    ]
+  },
+  {
+    "name": "Tangy Manchurian",
+    "image": "https://www.awesomecuisine.com/wp-content/uploads/2023/03/manchurian.jpg",
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "1 cup mixed vegetables (cabbage, carrots, ginger, bell peppers, onions)",
+      "1 green chili, finely chopped",
+      "1 cup cauliflower, grated",
+      "1 bell pepper, diced",
+      "2 tbsp cornstarch",
+      "Salt to taste",
+      "2 tbsp soy sauce",
+      "1 tbsp chili sauce",
+      "1 tbsp ketchup",
+      "2 tbsp vinegar",
+      "1 tbsp sugar",
+      "1 tbsp soy sauce",
+      "1 tbsp cornstarch",
+      "Oil for frying"
+    ],
+    "instructions": [
+      "Mix vegetables, chilli, ginger, cauliflower, flour, cornstarch, and salt. Shape into balls.",
+      "Fry vegetable balls in oil until golden brown. Set aside.",
+      "Mix a soy sauce, chilli sauce, ketchup, vinegar, sugar, and water pan.",
+      "Mix cornstarch with water. Slowly add to sauce, stirring until thickened.",
+      "Serve hot as an appetizer or with rice or noodles."
+    ]
+  }
+]
