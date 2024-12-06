@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { initialiseDatabase } = require('./db/db.connect');
 const RecipeData = require('./models/recipe.models');
-const fs = require('fs');
+// const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || PORT;
