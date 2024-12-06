@@ -2,10 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const { initialiseDatabase } = require('./db/db.connect');
 const RecipeData = require('./models/recipe.models');
-// const fs = require('fs');
+const fs = require('fs');
+const PORT = 3000;
 
 const app = express();
-const PORT = process.env.PORT || PORT;
+
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 initialiseDatabase();
 app.use(express.json());
