@@ -56,10 +56,56 @@ app.get('/recipes', async (req, res) => {
     if (recipes.length > 0) {
       res.json(recipes);
     } else {
-      res.status(400).json({ message: 'No recipe found.' });
+      res.status(404).json({ message: 'No recipe found.' });
     }
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch all recipes.' });
+  }
+});
+
+//get recipe by id
+async function getRecipeById(recipeId) {
+  try {
+    const recipe = await RecipeData.findOne({ _id: recipeId });
+    return recipe;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.get('/recipes/:id', async (req, res) => {
+  try {
+    const recipe = await getRecipeById(req.params.id);
+    if (recipe) {
+      res.json(recipe);
+    } else {
+      res.status(404).json({ error: 'no recipe found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch a recipe' });
+  }
+});
+
+//get recipe by name
+async function getRecipeByName(recipeName) {
+  try {
+    const recipe = await RecipeData.findOne({ name: recipeName });
+    return recipe;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.get('/recipes/name/:recipename', async (req, res) => {
+  try {
+    const recipe = await getRecipeByName(req.params.recipename);
+    if (recipe) {
+      res.json(recipe);
+    } else {
+      res.status(404).json({ error: 'recipe not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to get a recipe' });
   }
 });
 
@@ -82,6 +128,34 @@ app.post('/recipes', async (req, res) => {
       .json({ message: 'Recipe added successfully', recipe: savedRecipe });
   } catch (error) {
     res.status(500).json({ error: 'Failed to add recipe' });
+  }
+});
+
+//update recipe by id
+async function updateRecipe(recipeId, dataToUpdate) {
+  try {
+    const recipe = await RecipeData.findByIdAndUpdate(recipeId, dataToUpdate, {
+      new: true,
+    });
+    return recipe;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+app.post('/recipes/:id', async (req, res) => {
+  try {
+    const updatedRecipe = await updateRecipe(req.params.id, req.body);
+    if (updatedRecipe) {
+      res.status(200).json({
+        message: 'Recipe updated successfully',
+        recipe: updatedRecipe,
+      });
+    } else {
+      res.status(404).json({ error: 'Recipe not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to update a recipe' });
   }
 });
 
