@@ -19,6 +19,8 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+app.get('/', (req, res) => res.send('Hello, express'));
+
 // const jsonData = fs.readFileSync('./recipes.json', 'UTF-8');
 // const recipeData = JSON.parse(jsonData);
 // function seedData() {
